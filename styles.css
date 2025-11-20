@@ -32,7 +32,6 @@ h1, h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     width: 400px;
     height: 400px;
     border-radius: 50%;
@@ -42,8 +41,8 @@ h1, h2 {
 }
 
 .image-circle img {
-    width: 100px;
-    height: 100px;
+    width: 90px;   /* Adjust image size */
+    height: 90px;  /* Adjust image size */
     object-fit: cover;
     margin: 10px;
     border-radius: 50%;
