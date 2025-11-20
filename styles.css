@@ -64,8 +64,8 @@ h1, h2 {
 
 .image-circle img:nth-child(3) {
     top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Ensures the middle image is centered */
 }
 
 .image-circle img:nth-child(4) {
