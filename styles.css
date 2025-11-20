@@ -41,40 +41,40 @@ h1, h2 {
 }
 
 .image-circle img {
-    width: 90px;   /* Adjust image size */
-    height: 90px;  /* Adjust image size */
+    width: 90px;   /* 图片大小 */
+    height: 90px;  /* 图片大小 */
     object-fit: cover;
     margin: 10px;
     border-radius: 50%;
     position: absolute;
 }
 
-.image-circle img:nth-child(1) {
-    top: 10px;
+.image-circle img.center {
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%); /* 确保中间图片居中 */
 }
 
-.image-circle img:nth-child(2) {
+.image-circle img.top {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%); /* 上方图片 */
+}
+
+.image-circle img.left {
     top: 50%;
     left: 10px;
-    transform: translateY(-50%);
+    transform: translateY(-50%); /* 左侧图片 */
 }
 
-.image-circle img:nth-child(3) {
+.image-circle img.right {
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);  /* Ensures the middle image is centered */
+    right: 10px;
+    transform: translateY(-50%); /* 右侧图片 */
 }
 
-.image-circle img:nth-child(4) {
+.image-circle img.bottom {
     bottom: 10px;
     left: 50%;
-    transform: translateX(-50%);
-}
-
-.image-circle img:nth-child(5) {
-    top: 10px;
-    right: 50%;
-    transform: translateX(50%);
+    transform: translateX(-50%); /* 下方图片 */
 }
